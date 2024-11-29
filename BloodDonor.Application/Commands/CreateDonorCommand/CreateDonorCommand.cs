@@ -4,7 +4,7 @@ using MediatR;
 
 namespace BloodDonor.Application.Commands.CreateDonorCommand;
 
-public class CreateDonorCommand : IRequest<ResultViewModel<Guid>>
+public class CreateDonorCommand : IRequest<ResultViewModel<int>>
 {
     public string FullName { get; set; }
     public string Email { get; set; }

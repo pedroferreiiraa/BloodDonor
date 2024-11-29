@@ -20,3 +20,4 @@ C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Infrastructure\obj\Debug\net
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Infrastructure\obj\Debug\net8.0\BloodDonor.Infrastructure.pdb
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Infrastructure\obj\Debug\net8.0\BloodDonor.Infrastructure.genruntimeconfig.cache
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Infrastructure\obj\Debug\net8.0\ref\BloodDonor.Infrastructure.dll
+C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Infrastructure\obj\Debug\net8.0\BloodDonor.Infrastructure.sourcelink.json

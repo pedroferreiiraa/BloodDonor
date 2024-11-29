@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BloodDonor.Application.Commands.CreateDonorCommand;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BloodDonor.API.Controllers;
 
@@ -6,15 +8,22 @@ namespace BloodDonor.API.Controllers;
 [Route("api/Donors")]
 public class DonorsControllers : ControllerBase
 {
-    [HttpPost]
-    public IActionResult CreateDonor(CreateDonorCommand command)
+    
+    
+    private readonly IMediator _mediator;
+
+    public DonorsControllers(IMediator mediator)
     {
-        var Donor = await _mediator.Send(command);
-        if (!DonorId.IsSucces)
+        _mediator = mediator;
+    }
+    [HttpPost]
+    public async Task<IActionResult> CreateDonor(CreateDonorCommand command)
+    {
+        var DonorId = await _mediator.Send(command);
+        if (!DonorId.IsSuccess)
         {
             return BadRequest(DonorId.Message);
         }
-
         return Ok(DonorId);
     }
 }

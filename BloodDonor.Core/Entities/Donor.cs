@@ -26,8 +26,8 @@ public class Donor : BaseEntity
     public EBloodType BloodType { get; private set; }
     public ERhFactor RhFactor { get; private set; }
     public List<Donation> Donations { get; private set; }
-    public Address? Addres { get; private set; }
-    public Guid AddresId { get; private set; }
+    public Address? Address { get; private set; }
+    public int? AddressId { get; private set; }
 
     public int CalculateAge(DateTime birthdate)
     {

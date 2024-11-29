@@ -19,6 +19,11 @@ public class BloodDonorDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Donor>()
+            .HasOne(d => d.Address)
+            .WithOne(a => a.Donor)
+            .HasForeignKey<Donor>(d => d.AddressId)
+            .OnDelete(DeleteBehavior.Cascade); // Ajuste conforme a regra de exclusão desejada
 
 
     }

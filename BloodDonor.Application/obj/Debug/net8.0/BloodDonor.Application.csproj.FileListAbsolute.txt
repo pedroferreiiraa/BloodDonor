@@ -15,3 +15,4 @@ C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Application\obj\Debug\net8.0
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Application\obj\Debug\net8.0\refint\BloodDonor.Application.dll
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Application\obj\Debug\net8.0\BloodDonor.Application.pdb
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Application\obj\Debug\net8.0\ref\BloodDonor.Application.dll
+C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Application\obj\Debug\net8.0\BloodDonor.Application.sourcelink.json

@@ -20,3 +20,4 @@ C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Core\obj\Debug\net8.0\BloodD
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Core\obj\Debug\net8.0\refint\BloodDonor.Core.dll
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Core\obj\Debug\net8.0\BloodDonor.Core.pdb
 C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Core\obj\Debug\net8.0\ref\BloodDonor.Core.dll
+C:\Users\pdro5\Documents\Code\BloodDonor\BloodDonor.Core\obj\Debug\net8.0\BloodDonor.Core.sourcelink.json

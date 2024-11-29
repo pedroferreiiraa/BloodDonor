@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using BloodDonor.Application.Commands.CreateDonorCommand;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BloodDonor.Application;
 
@@ -14,9 +15,9 @@ public static class ApplicationModule
 
     private static IServiceCollection AddHandlers(this IServiceCollection services)
     {
-        // services.AddMediatR(config =>
-        //     config.RegisterServicesFromAssemblyContaining<InsertUserCommand>()
-        // );
+        services.AddMediatR(config =>
+            config.RegisterServicesFromAssemblyContaining<CreateDonorCommand>()
+        );
 
         return services;
     }
