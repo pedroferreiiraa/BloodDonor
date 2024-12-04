@@ -1,6 +1,6 @@
-﻿using BloodDonor.Core.Repositories;
+﻿using BloodDonor.Core.Entities;
+using BloodDonor.Core.Repositories;
 using BloodDonor.Infrastructure.Persistence;
-using ClassLibrary1.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BloodDonor.Infrastructure.Repositories;
@@ -25,6 +25,11 @@ public class DonorRepository : IDonorRepository
         await _context.Donors.AddAsync(donor);
 
         await _context.SaveChangesAsync();
+    }
+
+    public Task AddAddressAsync(Address address)
+    {
+        throw new NotImplementedException();
     }
 
     public Task<List<Donor>> GetAllAsync()

@@ -1,7 +1,7 @@
 ﻿using BloodDonor.Application.Validators;
 using BloodDonor.Application.ViewModels;
+using BloodDonor.Core.Entities;
 using BloodDonor.Core.Repositories;
-using ClassLibrary1.Entities;
 using MediatR;
 
 namespace BloodDonor.Application.Commands.CreateDonorCommand;

@@ -1,4 +1,5 @@
-﻿using BloodDonor.Core.Repositories;
+﻿using BloodDonor.Core.Entities;
+using BloodDonor.Core.Repositories;
 using BloodDonor.Infrastructure.Persistence;
 using BloodDonor.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,8 @@ public static class InfrastructureModule
     private static IServiceCollection AddRepositories(this IServiceCollection services)
     {
         services.AddScoped<IDonorRepository, DonorRepository>();
+        services.AddScoped<IDonationRepository, DonationRepository>();
+        services.AddScoped<IBloodStockRepository, BloodStockRepository>();
         return services;
 
     }

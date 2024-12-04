@@ -1,6 +1,6 @@
 ﻿using BloodDonor.Core.Enums;
 
-namespace ClassLibrary1.Entities;
+namespace BloodDonor.Core.Entities;
 
 public class Donor : BaseEntity
 {
@@ -33,8 +33,7 @@ public class Donor : BaseEntity
     {
         var today = DateTime.Now;
         var age = today.Year - birthdate.Year;
-
-        // Verifica se o aniversário já passou este ano
+        
         if (today.Month < birthdate.Month || (today.Month == birthdate.Month && today.Day < birthdate.Day))
         {
             age--;

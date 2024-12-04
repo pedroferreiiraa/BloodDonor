@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary1.Entities;
+﻿namespace BloodDonor.Core.Entities;
 
 public class BaseEntity
 {
