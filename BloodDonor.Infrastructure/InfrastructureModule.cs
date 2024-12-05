@@ -1,7 +1,9 @@
 ﻿using BloodDonor.Core.Entities;
+using BloodDonor.Core.Interfaces;
 using BloodDonor.Core.Repositories;
 using BloodDonor.Infrastructure.Persistence;
 using BloodDonor.Infrastructure.Repositories;
+using BloodDonor.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +35,8 @@ public static class InfrastructureModule
         services.AddScoped<IDonorRepository, DonorRepository>();
         services.AddScoped<IDonationRepository, DonationRepository>();
         services.AddScoped<IBloodStockRepository, BloodStockRepository>();
+        services.AddScoped<IAddressRepository, AddressRepository>();
+        services.AddScoped<ICepService, CepService>();
         return services;
 
     }

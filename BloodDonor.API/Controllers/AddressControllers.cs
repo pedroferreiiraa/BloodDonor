@@ -1,23 +1,22 @@
-﻿using BloodDonor.Application.Commands.DonationCommands.CreateDonation;
+﻿using BloodDonor.Application.Commands.AddressCommands.CreateAddress;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloodDonor.API.Controllers;
 
-
-[Route("api/donations")]
+[Route("api/address")]
 [ApiController]
-public class DonationsControllers : ControllerBase
+public class AddressControllers : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    public DonationsControllers(IMediator mediator)
+    public AddressControllers(IMediator mediator)
     {
         _mediator = mediator;
     }
-
+    
     [HttpPost]
-    public async Task<IActionResult> Post(CreateDonationCommand command)
+    public async Task<IActionResult> Post(CreateAddressCommand command)
     {
         var result = await _mediator.Send(command);
         if (!result.IsSuccess)
@@ -38,5 +37,6 @@ public class DonationsControllers : ControllerBase
 
         return Ok();
     }
+    
     
 }

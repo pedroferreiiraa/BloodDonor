@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BloodDonor.API.Controllers;
 
 [ApiController]
-[Route("api/Donors")]
+[Route("api/donors")]
 public class DonorsControllers : ControllerBase
 {
     
